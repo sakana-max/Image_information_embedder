@@ -105,7 +105,7 @@ When this item is entered, in this example, "text1.txt" will be generated.
 Download with the green button in the upper right.
 ### Prerequisites
 Python must be installed
-###Install dependencies
+### Install dependencies
 This project depends on the Python module (Pillow).
 
 To install, run
