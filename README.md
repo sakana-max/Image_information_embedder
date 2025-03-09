@@ -136,11 +136,11 @@ pyinstaller
 
 ## Translation
 
-This explanation and the commented out files are machine translated from Japanese.
+This explanation and the program comments are machine translated from Japanese.
 
-There may be don't desirable or incorrect expressions.
+There may be undesirable or incorrect expressions.
 
-In that case, please report it by lssues.
+If so, please report it with "lssues".
 
 ## License
 
