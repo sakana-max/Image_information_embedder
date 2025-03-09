@@ -5,7 +5,7 @@ This project allows you to embed any file without distorting the image.
 
 ### Details
 Records and reads 0 and 1 according to the even and odd RGB numbers of the image
-Can simultaneously write and read binary and file names in the image itself, so extensions can be applied automatically
+Can write and read binary and file names simultaneously in the image itself, so extensions can be applied automatically
 
 ## Usage (general users)
 
@@ -14,8 +14,7 @@ Can simultaneously write and read binary and file names in the image itself, so 
 Download the latest release.
 
 ## Usage
-
-Run "Image_information_embedder.exe" included in the release.
+Run "Image_information_embedder.exe" included in the release　in zip file.
 
 ### Settings
 
@@ -26,7 +25,7 @@ Mode: Encode or decode: Enter 0 or 1:
 ```
 
 Select whether to write (0) or read (1) the file
-### If you select Encode
+### If you select write
 
 The following input screens will be displayed in sequence. An input example is also shown
 (1)
@@ -83,7 +82,7 @@ Enter the path to the file to save:Image1.png:
 ```
 When all items are entered, in the above case, text.txt will be embedded and the Iimage1.png file will be generated.
 
-## If you select decode
+## If you select Load
 The following input screen will be displayed in sequence. An input example is also shown.
 
 Prerequisites: In this example, Image1.png generated in the writing example above will be loaded.
