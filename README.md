@@ -141,3 +141,7 @@ This explanation and the commented out files are machine translated from Japanes
 There may be don't desirable or incorrect expressions.
 
 In that case, please report it by lssues.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
