@@ -28,6 +28,7 @@ Select whether to write (0) or read (1) the file
 ### If you select write
 
 The following input screens will be displayed in sequence. An input example is also shown
+
 (1)
 ```sh
 Enter the file path to save:
@@ -121,7 +122,7 @@ Execute Image_information_embedder.py.
 The general method is to go to the downloaded directory and run
 
 ```sh
-python3 Image_information_embedder.py
+python Image_information_embedder.py
 ```
 
 ### Build
@@ -137,6 +138,6 @@ pyinstaller
 
 This explanation and the commented out files are machine translated from Japanese.
 
-There may be desirable or incorrect expressions.
+There may be don't desirable or incorrect expressions.
 
 In that case, please report it by lssues.
