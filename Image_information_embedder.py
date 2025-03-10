@@ -1,4 +1,3 @@
-﻿
 from m_src import decoder_m
 from m_src import encoder_m
 
@@ -23,8 +22,17 @@ if(mode == "0"):
 
   #ファイルを格納する
   #Store the file
-  encoder_m.write_image_bytes(data,O,A,B)
-  print("Write successful")
+  caveat = encoder_m.write_image_bytes(data,O,A,B)#同時に警告を代入:Simultaneously assign warning
+  #警告があるか判断
+  # Determine if there is a warning
+  if(caveat == ""):
+      #警告がない場合
+      #If there are no warnings
+      print("Write successful")
+  else:
+      #警告がある場合
+      #If there is a warning
+      print(caveat)
 
 
 elif(mode == "1"):

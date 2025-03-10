@@ -6,7 +6,7 @@ This project allows you to embed any file without distorting the image.
 The following image contains a text file: [The file being written(testImage/Hello.txt)](testImage/Hello.txt)
 ![Image file with text written on it](testImage/test.png)
 ### Details
-Records and reads 0 and 1 according to the even and odd RGB numbers of the image(LSB Method)
+Records and reads 0 and 1 according to the even and odd RGB numbers of the image
 Can write and read binary and file names simultaneously in the image itself, so extensions can be applied automatically
 
 ## Usage (general users)
@@ -102,6 +102,13 @@ Example:
 Enter the path to the image to load:Image1.png
 ```
 When this item is entered, in this example, "text1.txt" will be generated.
+
+## Printing warnings
+
+If the file is not written correctly, a warning will be displayed.
+
+For a list of warnings, their causes, and how to deal with them, see
+ [List_of_Warnings.txt](List_of_Warnings.txt) 
 
 ## How to use (Developer)
 Download with the green button in the upper right.
