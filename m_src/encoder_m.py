@@ -1,4 +1,3 @@
-﻿from fileinput import filename
 from PIL import Image
 import locale
 import sys
@@ -19,7 +18,7 @@ def Imageencerd(bits = [],image_name="",out_name=""):
  Maximum = len(bits)
 
  count =0
-
+ caveat = "No warning"
  for x in range(size[0]):
     for y in range(size[1]):
 
@@ -101,7 +100,10 @@ def Imageencerd(bits = [],image_name="",out_name=""):
  #書き込み
  #write
  im.save(out_name)
-
+ if Maximum >= count:
+     #Warning when all files could not be written
+     caveat = "caveat[1]!File writing was interrupted. There is no space to embed. The embedded file is corrupted or only partially filled.\nWriteable file size: Approx."+(str(size[0] * size[1]*3/8))+"byt"
+ return caveat#警告を返す。ない場合は""を返す:Returns a warning, or "" if none
 
 def write_image_bytes(byt =[],filename="",image_path="",out_path=""):
     #ファイルのバイト情報を区切られたビット情報に変換し、書き込まれた情報の長さと、出力されるファイル名を格納するプログラム
@@ -158,4 +160,4 @@ def write_image_bytes(byt =[],filename="",image_path="",out_path=""):
     
     #ビット情報を書き込み
     #Write bit information
-    Imageencerd(Advanced_Information,image_path,out_path)
+    return Imageencerd(Advanced_Information,image_path,out_path)#警告を返す。ない場合は""を返す:Returns a warning, or "" if none

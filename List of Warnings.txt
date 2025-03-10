@@ -1,0 +1,11 @@
+List and Solutions
+
+caveat[1]!File writing was interrupted. There is no space to embed. The embedded file is corrupted or only partially filled.
+Writeable file size: Approx."XXX"byt
+
+Symptoms
+
+File is corrupted or only partially written when decoded
+Solution
+
+Make the file smaller. Or increase the resolution of the image file you are writing.

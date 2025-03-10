@@ -1,4 +1,4 @@
-﻿from PIL import Image
+from PIL import Image
 import locale
 import sys
 sys.setrecursionlimit(10000)
@@ -16,7 +16,7 @@ nn = 0
 xx= 0
 byt = True
 
-def setset(a):
+def setbyt(a):
  #ビット列からバイト列を取り出すプログラム
  #Program to extract byte string from bit string
 
@@ -46,7 +46,6 @@ def setset(a):
      #Indicate to move to the next byte after writing 8 bits
      nn = 0
      xx +=1
-     return hann
 
 def rood_image_bytes(pas=""):
  #画像からビット情報を読み込むプログラム
@@ -82,33 +81,33 @@ def rood_image_bytes(pas=""):
         #読み込んだ色情報が偶数なら0を記録奇数なら1を記録　全部読み込んだらループから抜ける
         # If the color information read is even, record 0. If it is odd, record 1. Once all the color information is read, exit the loop.
         if (r0 % 2) == 0:
-          hhhe=setset(0)
+          setbyt(0)
           if orStop == True and int(stopbit,2)<= K:
             break
         else :
-          hhhe=setset(1)
+          setbyt(1)
           if orStop == True and int(stopbit,2)<= K:
             break
         K += 1
         #読み込んだ色情報が偶数なら0を記録奇数なら1を記録　全部読み込んだらループから抜ける
         # If the color information read is even, record 0. If it is odd, record 1. Once all the color information is read, exit the loop.
         if (g0 % 2) == 0:
-          hhhe=setset(0)
+          setbyt(0)
           if orStop == True and int(stopbit,2)<= K:
             break
         else :
-          hhhe=setset(1)
+          setbyt(1)
           if orStop == True and int(stopbit,2)<= K:
             break
         K += 1
         #読み込んだ色情報が偶数なら0を記録奇数なら1を記録　全部読み込んだらループから抜ける
         # If the color information read is even, record 0. If it is odd, record 1. Once all the color information is read, exit the loop.
         if (b0 % 2) == 0:
-          hhhe=setset(0)
+          setbyt(0)
           if orStop == True and int(stopbit,2)< K:
             break
         else :
-          hhhe=setset(1)
+          setbyt(1)
           if orStop == True and int(stopbit,2)<= K:
             break
         K += 1
