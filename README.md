@@ -103,6 +103,13 @@ Enter the path to the image to load:Image1.png
 ```
 When this item is entered, in this example, "text1.txt" will be generated.
 
+## Printing warnings
+
+If the file is not written correctly, a warning will be displayed.
+
+For a list of warnings, their causes, and how to deal with them, see
+ [List_of_Warnings.txt](List_of_Warnings.txt) 
+
 ## How to use (Developer)
 Download with the green button in the upper right.
 ### Prerequisites
