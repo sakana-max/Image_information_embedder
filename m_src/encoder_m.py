@@ -18,7 +18,7 @@ def Imageencerd(bits = [],image_name="",out_name=""):
  Maximum = len(bits)
 
  count =0
- caveat = "No warning"
+ caveat = ""
  for x in range(size[0]):
     for y in range(size[1]):
 
