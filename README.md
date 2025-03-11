@@ -12,6 +12,7 @@ This allows you to embed and read any file into an image.
 
 You can also record the filename along with the file's binary, so you can automatically record the filename and extension when reading it.
 
+*Note: If there is a file with the same name as the output file, it will be overwritten. Please be careful.
 ## Usage (general users)
 
 ### Installation
@@ -75,10 +76,9 @@ Enter the path of the image to write: Image.png
 Enter the file path to save:
 ```
 
-Description: Enter the image file name to write.
+Description: Enter the name of the output image file.
 
-It is recommended to avoid the same name and enter the same extension.
-It must be a png file.
+It is not recommended to use the same name as the image you are writing. It must be a png file.
 
 An image file with this name will be generated.
 
