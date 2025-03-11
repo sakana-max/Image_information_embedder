@@ -10,9 +10,8 @@ def Imageencerd(bits = [],image_name="",out_name=""):
  #書き込む画像情報を取得
  #Get image information to write
  im = Image.open(image_name)
- rgb_im = im.convert('RGB')
+ rgb_im = im.convert('RGBA')
  size = rgb_im.size
-
  #書き込むビット情報の長さを取得
  #Get the length of the bit information to write
  Maximum = len(bits)
@@ -24,8 +23,8 @@ def Imageencerd(bits = [],image_name="",out_name=""):
 
         #画像の色を取得
         #Get image color
-        r0,g0,b0 = rgb_im.getpixel((x,y))
-
+        r0,g0,b0,a0 = rgb_im.getpixel((x,y))
+        
         #書き込み終わってなかったらビット情報を書き込み
         #If writing is not complete, write the bit information
         if Maximum > count:
@@ -85,7 +84,7 @@ def Imageencerd(bits = [],image_name="",out_name=""):
 
         #色を決定
         #Decide on color
-        im.putpixel((x,y),(r0,g0,b0,0))
+        im.putpixel((x,y),(r0,g0,b0,a0))
 
         #すべて書き込んだらループから抜ける
         # Once everything is written, exit the loop
@@ -102,7 +101,7 @@ def Imageencerd(bits = [],image_name="",out_name=""):
  im.save(out_name)
  if Maximum >= count:
      #Warning when all files could not be written
-     caveat = "caveat[1]!File writing was interrupted. There is no space to embed. The embedded file is corrupted or only partially filled.\nWriteable file size: Approx."+(str(size[0] * size[1]*3/8))+"byt"
+     caveat += "caveat[1]!File writing was interrupted. There is no space to embed. The embedded file is corrupted or only partially filled.\nWriteable file size: Approx."+(str(size[0] * size[1]*3/8))+"byt"
  return caveat#警告を返す。ない場合は""を返す:Returns a warning, or "" if none
 
 def write_image_bytes(byt =[],filename="",image_path="",out_path=""):

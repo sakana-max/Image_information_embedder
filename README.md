@@ -73,7 +73,7 @@ Enter the path of the image to write: Image.png
 ```
 (4)
 ```sh
-Enter the file path to save:
+Enter the image file path to save:
 ```
 
 Description: Enter the name of the output image file.
@@ -84,7 +84,7 @@ An image file with this name will be generated.
 
 Example:
 ```sh
-Enter the path to the file to save:Image1.png:
+Enter the path to the image file to save:Image1.png:
 ```
 When all items are entered, in the above case, text.txt will be embedded and the Iimage1.png file will be generated.
 

@@ -10,10 +10,14 @@ if(mode == "0"):
  
   #必要情報を取得(格納するファイルのパス、デコードした際のファイル名、書き込む画像パス、出力する画像パス)
   #Get required information (path of file to store, file name when decoded, image path to write, image path to output)
-  S= input ("Enter the file path to store:")
-  O= input ("Enter the file path to output:")
-  A= input ("Enter the path of the image to be written:")
-  B= input ("Enter the file path to store:")
+  while True:
+     S= input ("Enter the file path to store:")
+     O= input ("Enter the file path to output:")
+     A= input ("Enter the path of the image to be written:")
+     B= input ("Enter the image file path to store:")
+     confirmation = input("Is the above content correct?:No or Yes:1 or Other input")
+     if confirmation != "1":
+         break
 
   #格納するファイルのバイナリを取得
   #Get the binary of the file to be stored
@@ -41,7 +45,11 @@ elif(mode == "1"):
 
      #読み込む画像のパスを取得
      #Get the path of the image to be loaded
-     A= input ("Enter the path of the image you want to load:")
+     while True:
+        A= input ("Enter the path of the image you want to load:")
+        confirmation = input("Is the above content correct?:No or Yes:1 or Other input")
+        if confirmation != "1":
+           break
 
      #バイナリ情報とファイル名を画像から読み出し
      #Read binary information and filename from image
