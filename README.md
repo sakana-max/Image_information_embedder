@@ -6,8 +6,11 @@ This project allows you to embed any file without distorting the image.
 The following image contains a text file: [The file being written(testImage/Hello.txt)](testImage/Hello.txt)
 ![Image file with text written on it](testImage/test.png)
 ### Details
-Records and reads 0 and 1 according to the even and odd RGB numbers of the image
-Can write and read binary and file names simultaneously in the image itself, so extensions can be applied automatically
+Records and reads 0 and 1 according to the even and odd RGB numbers of the image. (LSB conversion)
+
+This allows you to embed and read any file into an image.
+
+You can also record the filename along with the file's binary, so you can automatically record the filename and extension when reading it.
 
 ## Usage (general users)
 
