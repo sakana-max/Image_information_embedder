@@ -15,7 +15,7 @@ if(mode == "0"):
      O= input ("Enter the file path to output:")
      A= input ("Enter the path of the image to be written:")
      B= input ("Enter the image file path to store:")
-     confirmation = input("Is the above content correct?:No or Yes:1 or Other input")
+     confirmation = input("Is the above content correct?:No or Yes:1 or Other input:")
      if confirmation != "1":
          break
 
@@ -47,7 +47,7 @@ elif(mode == "1"):
      #Get the path of the image to be loaded
      while True:
         A= input ("Enter the path of the image you want to load:")
-        confirmation = input("Is the above content correct?:No or Yes:1 or Other input")
+        confirmation = input("Is the above content correct?:No or Yes:1 or Other input:")
         if confirmation != "1":
            break
 
