@@ -169,14 +169,6 @@ The general method is to go to the downloaded directory and run
 python Image_information_embedder.py
 ```
 
-### Build
-
-You can do it your own way.
-
-For release, we build with
-
-pyinstaller
-
 
 ## Translation
 
