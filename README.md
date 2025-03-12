@@ -73,7 +73,7 @@ Enter the path of the image to write: Image.png
 ```
 (4)
 ```sh
-Enter the file path to save:
+Enter the image file path to save:
 ```
 
 Description: Enter the name of the output image file.
@@ -84,7 +84,22 @@ An image file with this name will be generated.
 
 Example:
 ```sh
-Enter the path to the file to save:Image1.png:
+Enter the image file path to save:Image1.png:
+```
+
+(5)
+```sh
+Is the above content correct?:No or Yes:1 or Other input
+```
+Description:Confirm that the value you entered is correct.
+
+If it is correct, enter a blank. 
+
+If you want to re-enter it, enter "1."
+
+Example:
+```sh
+Is the above content correct?:No or Yes:1 or Other input
 ```
 When all items are entered, in the above case, text.txt will be embedded and the Iimage1.png file will be generated.
 
@@ -92,6 +107,8 @@ When all items are entered, in the above case, text.txt will be embedded and the
 The following input screen will be displayed in sequence. An input example is also shown.
 
 Prerequisites: In this example, Image1.png generated in the writing example above will be loaded.
+
+(1)
 
 ```sh
 Enter the path to the image to load:
@@ -104,8 +121,23 @@ Example:
 ```sh
 Enter the path to the image to load:Image1.png
 ```
-When this item is entered, in this example, "text1.txt" will be generated.
 
+(2)
+
+```sh
+Is the above content correct?:No or Yes:1 or Other input:
+```
+Description:Confirm that the value you entered is correct.
+
+If it is correct, enter a blank. 
+
+If you want to re-enter it, enter "1."
+
+Example:
+```sh
+Is the above content correct?:No or Yes:1 or Other input:
+```
+When this item is entered, in this example, "text1.txt" will be generated.
 ## Printing warnings
 
 If the file is not written correctly, a warning will be displayed.
