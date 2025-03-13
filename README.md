@@ -12,7 +12,7 @@ This allows you to embed and read any file into an image.
 
 You can also record the filename along with the file's binary, so you can automatically record the filename and extension when reading it.
 
-*Note: If there is a file with the same name as the output file, it will be overwritten. Please be careful.
+~~*Note: If there is a file with the same name as the output file, it will be overwritten. Please be careful.~~　Improved
 ## Usage (general users)
 
 ### Installation
