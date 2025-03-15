@@ -3,7 +3,7 @@ import locale
 import sys
 sys.setrecursionlimit(10000)
 
-def rood_image_system(inpas=""):
+def rood_image_system(inpas):
  #画像をロードして情報を返す
  #Load the image and return the information
 
@@ -11,19 +11,31 @@ def rood_image_system(inpas=""):
  rgb_im = im.convert('RGB')
  size = rgb_im.size
  return size,rgb_im
+
 lists = []
 nn = 0
 xx= 0
 byt = True
 
+def relaed():
+    global lists
+    global nn
+    global xx
+    lists = []
+    nn = 0
+    xx= 0
+    byt = True
+
 def setbyt(a):
  #ビット列からバイト列を取り出すプログラム
  #Program to extract byte string from bit string
 
+ 
  global lists
  global nn
  global xx
  hann = False
+ 
   
  #ビット情報をバイト情報にまとめる
  #Combine bit information into byte information
@@ -47,7 +59,7 @@ def setbyt(a):
      nn = 0
      xx +=1
 
-def rood_image_bytes(pas=""):
+def rood_image_bytes(pas):
  #画像からビット情報を読み込むプログラム
  #Program to read bit information from an image
 
