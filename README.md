@@ -13,137 +13,66 @@ This allows you to embed and read any file into an image.
 You can also record the filename along with the file's binary, so you can automatically record the filename and extension when reading it.
 
 ~~*Note: If there is a file with the same name as the output file, it will be overwritten. Please be careful.~~　Improved
-## Usage (general users)
+### update
+A GUI environment has been added.
 
+This has improved the UX.
+
+If you are using the old CUI environment, please refer to README.md in the "old" file. The license is the same, but the content may be outdated.
+
+Please rest assured that the output files are compatible.
+## Usage (general users)
+*This is an explanation for the new GUI. If you are using the old CUI environment, please refer to the README.md file in the "old" file.
 ### Installation
 
-Download the latest release.
+~~Download the latest release.~~　Not currently published
 
 ## Usage
-Run "Image_information_embedder.exe" included in the release　in zip file.
+~~Run "Image_information_embedder.exe" included in the release　in zip file.~~　Not currently published
 
-### Settings
+## Setting the mode
 
-When executed, the following input screen will be displayed
+When it starts, enter the following
 
-```sh
-Mode: Encode or decode: Enter 0 or 1:
-```
+### Set the mode
 
-Select whether to write (0) or read (1) the file
-### If you select write
+Select decode mode (read) or decode mode (write).
 
-The following input screens will be displayed in sequence. An input example is also shown
+After setting the two buttons, press the "Decision" button to confirm.
 
-(1)
-```sh
-Enter the file path to save:
-```
+### If you set the encoding mode
 
-Description: Select the path of the file to embed.
+Four input tabs will appear.
 
-Example:
-```sh
-Enter the file path to save: Text.txt
-```
-(2)
-```sh
-Enter the file path to output:
-```
+From the top, they are
 
-Description: Enter the file name to output.
-It is recommended to avoid the same name and enter the same extension.
-A file with this name will be generated when decoded.
+1 Enter the file name to embed (file can be referenced)
 
-Example:
-```sh
-Enter the file path to save: Text1.txt
-```
-(3)
-```sh
-Enter the path of the image to write:
-```
+2 Enter the file name when output
 
-Description: Enter the image file name to write.
-jpg or png files are recommended.
+3 Enter the image file name to write (file can be referenced)
 
-Example:
-```sh
-Enter the path of the image to write: Image.png
-```
-(4)
-```sh
-Enter the image file path to save:
-```
+4 Enter the image file name to output
 
-Description: Enter the name of the output image file.
+When you have entered everything correctly, press the "Decision" button to confirm.
 
-It is not recommended to use the same name as the image you are writing. It must be a png file.
+When "Writing successful" is displayed under that button, it is complete.
 
-An image file with this name will be generated.
+### If you set the decoding mode
 
-Example:
-```sh
-Enter the image file path to save:Image1.png:
-```
+One input tab will appear.
 
-(5)
-```sh
-Is the above content correct?:No or Yes:1 or Other input
-```
-Description:Confirm that the value you entered is correct.
+To do this, select the name of the image file to read. (File can be referenced)
 
-If it is correct, enter a blank. 
+When you have entered everything correctly, press the "Decision" button to confirm.
 
-If you want to re-enter it, enter "1."
+When "Saving successful" appears below the button, the process is complete.
 
-Example:
-```sh
-Is the above content correct?:No or Yes:1 or Other input
-```
-When all items are entered, in the above case, text.txt will be embedded and the Iimage1.png file will be generated.
+### *You may be asked to confirm whether you want to overwrite the file during the process.
 
-## If you select Load
-The following input screen will be displayed in sequence. An input example is also shown.
+If this happens, simply press the "Decision" button again to confirm if you want to overwrite the file, or if you want to change the file name, change or enter the 
 
-Prerequisites: In this example, Image1.png generated in the writing example above will be loaded.
-
-(1)
-
-```sh
-Enter the path to the image to load:
-```
-Explanation:
-Select the file to load. The extension must be .png.
-
-Example:
-
-```sh
-Enter the path to the image to load:Image1.png
-```
-
-(2)
-
-```sh
-Is the above content correct?:No or Yes:1 or Other input:
-```
-Description:Confirm that the value you entered is correct.
-
-If it is correct, enter a blank. 
-
-If you want to re-enter it, enter "1."
-
-Example:
-```sh
-Is the above content correct?:No or Yes:1 or Other input:
-```
-When this item is entered, in this example, "text1.txt" will be generated.
-## Printing warnings
-
-If the file is not written correctly, a warning will be displayed.
-
-For a list of warnings, their causes, and how to deal with them, see
- [List_of_Warnings.txt](List_of_Warnings.txt) 
+output name and then press the "Decision" button to confirm.
 
 ## How to use (Developer)
 Download with the green button in the upper right.
@@ -161,12 +90,12 @@ pip install Pillow
 .
 ### How to run
 
-Execute Image_information_embedder.py.
+Execute Image_information_embedder_GUI.py.
 
 The general method is to go to the downloaded directory and run
 
 ```sh
-python Image_information_embedder.py
+python Image_information_embedder_GUI.py
 ```
 
 
