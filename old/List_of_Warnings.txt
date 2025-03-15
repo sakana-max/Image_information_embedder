@@ -1,0 +1,32 @@
+List and Solutions
+
+caveat[1]!File writing was interrupted. There is no space to embed. The embedded file is corrupted or only partially filled.
+Writeable file size: Approx."XXX"byt
+
+Symptoms
+
+File is corrupted or only partially written when decoded
+
+Solution
+
+Make the file smaller. Or increase the resolution of the image file you are writing.
+
+caveat[2]!There is no file path to specify. Please re-enter
+
+Cause
+
+The file name you entered does not exist.
+
+Solution
+
+Re-enter the file name.
+
+caveat[3]!A file with the same name already exists. If you leave it as is, it will be overwritten when decoding and outputting.
+
+Cause
+
+The file name you entered already exists.
+
+Solution
+
+Choose to overwrite or re-enter.
