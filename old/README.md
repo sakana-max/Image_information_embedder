@@ -3,8 +3,8 @@
 ## Overview
 This project allows you to embed any file without distorting the image.
 
-The following image contains a text file: [The file being written(testImage/Hello.txt)](testImage/Hello.txt)
-![Image file with text written on it](testImage/test.png)
+The following image contains a text file: [The file being written(testImage/Hello.txt)](../testImage/Hello.txt)
+![Image file with text written on it](../testImage/test.png)
 ### Details
 Records and reads 0 and 1 according to the even and odd RGB numbers of the image. (LSB conversion)
 
@@ -20,6 +20,10 @@ You can also record the filename along with the file's binary, so you can automa
 Download the latest release.
 
 ## Usage
+*This is the usage for the old CUI.
+
+*If you are using the new GUI environment, please refer to the README in the root directory.
+
 Run "Image_information_embedder.exe" included in the release　in zip file.
 
 ### Settings
@@ -143,7 +147,7 @@ When this item is entered, in this example, "text1.txt" will be generated.
 If the file is not written correctly, a warning will be displayed.
 
 For a list of warnings, their causes, and how to deal with them, see
- [List_of_Warnings.txt](List_of_Warnings.txt) 
+ [List_of_Warnings.txt](./List_of_Warnings.txt) 
 
 ## How to use (Developer)
 Download with the green button in the upper right.
@@ -180,4 +184,4 @@ If so, please report it with "lssues".
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for more details.
