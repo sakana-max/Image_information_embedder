@@ -25,10 +25,10 @@ Please rest assured that the output files are compatible.
 *This is an explanation for the new GUI. If you are using the old CUI environment, please refer to the README.md file in the "old" file.
 ### Installation
 
-~~Download the latest release.~~　Not currently published
+Download the latest release.
 
 ## Usage
-~~Run "Image_information_embedder.exe" included in the release　in zip file.~~　Not currently published
+Run "Image_information_embedder_GUI.exe" included in the release in zip file.
 
 ## Setting the mode
 
