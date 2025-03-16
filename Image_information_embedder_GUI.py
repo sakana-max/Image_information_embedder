@@ -43,8 +43,7 @@ def reverse_and_sort_for(text):
     if char == ".":
       break
     reversed_text += char
-
-  sorted_text = "".join(sorted(reversed_text))
+  sorted_text = "".join(reversed(reversed_text))
   return sorted_text
 
 def openfile(A = "", B = 0):
@@ -178,8 +177,15 @@ def encode(seve,output,inImage,outImage):
     global H2
     global root
     global text5
-    fomat = ["gnp","gpj","gepj"]
-    if(os.path.isfile(seve) == True and os.path.isfile(inImage) == True and output != "" and reverse_and_sort_for(inImage) == fomat[0] or reverse_and_sort_for(inImage) == fomat[1] or reverse_and_sort_for(inImage) == fomat[2]):
+    fomat = ["png","jpg","jpeg"]
+    
+    CCC = 0
+    
+    for i in range(3):
+            if(reverse_and_sort_for(inImage) != fomat[i -1]):
+                CCC += 1
+    print(reverse_and_sort_for(inImage) )
+    if(os.path.isfile(seve) == True and os.path.isfile(inImage) == True and output != "" and reverse_and_sort_for(outImage) == fomat[0] and CCC < 3):
      if os.path.isfile(outImage) == True and H2 == False:
          H1 = True
          cnb["text"] = "Warning: A file with the same name as the output image already exists. \nChange the name or click the OK button again if you wish."
@@ -198,8 +204,13 @@ def encode(seve,output,inImage,outImage):
          H1 = False
     else:
         text ="Please enter valid values ​​for all fields。"
-        if(reverse_and_sort_for(inImage) != fomat[0] or reverse_and_sort_for(inImage) != fomat[1] or reverse_and_sort_for(inImage) != fomat[2]):
+        CC = 0
+        for i in range(3):
+            if(reverse_and_sort_for(inImage) != fomat[i -1]):
+                CC += 1
+        if(CC < 3):
             text += "\nOnly the [png,jpg,jpeg] extension can be used for the input."
+                    
         if(reverse_and_sort_for(outImage) != fomat[0]):
             text += "\nOnly the [png] extension can be used for the output."
         messagebox.showerror("error", text)
