@@ -131,7 +131,7 @@ def decode(filename):
     decoder_m.relaed()
     if(os.path.isfile(filename) == False):
         messagebox.showerror("error", "Please enter a valid file path.")
-    elif reverse_and_sort_for(filename) != "gnp":
+    elif reverse_and_sort_for(filename) != "png":
         messagebox.showerror("error", " Only the [png] extension can be used for the output.")
     else:
      global root
